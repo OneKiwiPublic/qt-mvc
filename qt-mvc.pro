@@ -1,4 +1,5 @@
 QT       += core gui
+QT       += network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -14,6 +15,8 @@ SOURCES += \
     main.cpp \
     model/InfoModel.cpp \
     model/MainModel.cpp \
+    network/ApiLCSC.cpp \
+    network/HttpRequest.cpp \
     view/InfoDialog.cpp \
     view/MainForm.cpp
 
@@ -22,6 +25,8 @@ HEADERS += \
     controller/MainController.h \
     model/InfoModel.h \
     model/MainModel.h \
+    network/ApiLCSC.h \
+    network/HttpRequest.h \
     view/InfoDialog.h \
     view/MainForm.h
 
