@@ -2,6 +2,8 @@
 #define MAINFORM_H
 
 #include <QMainWindow>
+#include <QPushButton>
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainForm; }
@@ -14,6 +16,9 @@ class MainForm : public QMainWindow
 public:
     MainForm(QWidget *parent = nullptr);
     ~MainForm();
+
+public:
+    QPushButton *button;
 
 private:
     Ui::MainForm *ui;

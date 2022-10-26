@@ -6,6 +6,7 @@ MainForm::MainForm(QWidget *parent)
     , ui(new Ui::MainForm)
 {
     ui->setupUi(this);
+    button = ui->button;
 }
 
 MainForm::~MainForm()

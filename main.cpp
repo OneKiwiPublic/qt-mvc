@@ -1,11 +1,12 @@
-#include "view/MainForm.h"
+#include "controller/MainController.h"
 
 #include <QApplication>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    MainForm w;
-    w.show();
+    MainController controller;
+    controller.show();
+
     return a.exec();
 }
