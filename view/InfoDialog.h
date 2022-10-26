@@ -17,6 +17,9 @@ public:
 
     void setLabel(QString data);
 
+public:
+    QPushButton *button;
+
 private:
     Ui::InfoDialog *ui;
 };

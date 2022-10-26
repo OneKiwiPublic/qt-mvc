@@ -6,7 +6,7 @@ MainController::MainController()
     mView = new MainForm();
     mModel = new MainModel();
 
-    connect(mView->button, SIGNAL(clicked()), this, SLOT(openDialog()));
+    connect(mView->button, &QPushButton::clicked, this, &MainController::openDialog);
 }
 
 MainController::~MainController()
@@ -23,7 +23,7 @@ void MainController::openDialog(){
     InfoController *controller;
     controller = new InfoController();
     controller->showDialog();
-    connect(this, SIGNAL(sendData2Dialog()), controller, SLOT(controller::getData2Main()));
+    connect(this, &MainController::sendData2Dialog, controller, &InfoController::getData2Main);
     emit sendData2Dialog("van son");
 
 

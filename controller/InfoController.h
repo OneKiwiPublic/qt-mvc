@@ -21,6 +21,7 @@ public:
 
 public slots:
     void getData2Main(QString data);
+    void getData();
 
 };
 
