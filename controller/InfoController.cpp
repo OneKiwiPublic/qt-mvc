@@ -15,3 +15,7 @@ void InfoController::showDialog(){
     mView->setModal(true);
     mView->show();
 }
+
+void InfoController::getData2Main(QString data){
+    mView->setLabel(data);
+}

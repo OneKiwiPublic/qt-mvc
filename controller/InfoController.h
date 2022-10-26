@@ -17,6 +17,11 @@ public:
     ~InfoController();
 
     void showDialog();
+
+
+public slots:
+    void getData2Main(QString data);
+
 };
 
 #endif // INFOCONTROLLER_H

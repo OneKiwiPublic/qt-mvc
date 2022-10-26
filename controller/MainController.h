@@ -18,6 +18,7 @@ public:
 
 signals:
     void openDialogEvent();
+    void sendData2Dialog(QString data);
 
 public slots:
     void show();

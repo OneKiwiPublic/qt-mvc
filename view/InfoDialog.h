@@ -15,6 +15,8 @@ public:
     explicit InfoDialog(QWidget *parent = nullptr);
     ~InfoDialog();
 
+    void setLabel(QString data);
+
 private:
     Ui::InfoDialog *ui;
 };

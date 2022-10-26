@@ -12,3 +12,7 @@ InfoDialog::~InfoDialog()
 {
     delete ui;
 }
+
+void InfoDialog::setLabel(QString data){
+    ui->label->setText(data);
+}

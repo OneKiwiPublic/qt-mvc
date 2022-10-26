@@ -20,7 +20,13 @@ void MainController::show(){
 
 void MainController::openDialog(){
     qDebug() << "open Dialog";
-    InfoController controller;
-    controller.showDialog();
+    InfoController *controller;
+    controller = new InfoController();
+    controller->showDialog();
+    connect(this, SIGNAL(sendData2Dialog()), controller, SLOT(controller::getData2Main()));
+    emit sendData2Dialog("van son");
+
+
+
 }
 
